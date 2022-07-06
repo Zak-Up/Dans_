@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* HEADER */
+
+
+.logo{
+  width: 50px;
+  margin-left: 4rem;
+}
+
+.title_logo{
+  margin-top: 0.5rem;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.741);
+}
+
+/* MAIN */
+.main{
+  margin-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+.ul{
+  margin-right: 4rem;
+}
+
+.alejo{
+  color: rgba(255, 68, 0, 0.818);
+}
+
+.btn-saber{
+  background-color: rgba(255, 68, 0, 0.818);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-saber:hover{
+  background-color: transparent;
+  color: rgba(255, 68, 0, 0.818);
+  border: solid 1px rgba(255, 68, 0, 0.818);
+  transition: 1s;
+}
+
+.col-alejo h1{
+  font-size: 50px;
+}
+
+.col-alejo p{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 20px;
+}
+
+.col-audio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PRODUCTOS */
+
+.card:hover{
+  transform: scale(1.05);
+  transition: 600ms ease all;
+}
+
+.card h5{
+  color: orange;
+}
+
+.cards_a{
+  padding: 3rem;
+  background-color: rgba(5, 48, 79, 0.035);
+}
+
+.cards_b{
+  padding: 8rem;
+}
+
+.productos_title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.promo{
+  position: absolute;
+  margin-left: 47%;
+  margin-bottom: 4rem;
+}
+
+.taser-title{
+  position: absolute;
+  margin-left: 47%;
+  margin-bottom: 4rem;
+}
+
+.taser{
+  padding: 4rem;
+  background-color: rgba(255, 68, 0, 0.818);
+  margin-top: 2rem;
+}
+
+/* WHATSAPP */
+.btn-wsp{
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background-color: orangered;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 35px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.btn-wsp:hover{
+  background-color: transparent;
+  border: solid 1px orangered;
+  color: orangered;
+  transform: scale(1.05);
+  transition: 1s;
+  box-shadow: none;
+}
+
+/* ============== RESPONSIVE ========== */
+@media screen and (max-width: 370px){
+  .main{
+    margin-top: 3rem;
+  }
+
+  .logo{
+    margin-left: 0;
+  }
+
+    .col-alejo h1 {
+      font-size: 40px;
+    }
+  
+    .col-alejo p {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      font-size: 16px;
+    }
+
+  .col-audio img{
+    width: 250px;
+  }
+
+  .cards_a{
+    padding: 1rem;
+  }
+
+  .btn-wsp{
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .cards_b{
+    padding: 0.5rem;
+  }
+    .promo {
+     display: none;
+    }
+
+    .taser-title {
+      position: absolute;
+      margin-left: 40%;
+      margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 450px){
+  .main {
+      margin-top: 2.5rem;
+    }
+  
+    .logo {
+      margin-left: 0;
+    }
+  
+    .col-alejo h1 {
+      font-size: 40px;
+    }
+  
+    .col-alejo p {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      font-size: 16px;
+    }
+  
+    .col-audio img {
+      width: 250px;
+    }
+  
+    .cards_a {
+      padding: 0.25rem;
+    }
+  
+    .btn-wsp {
+      right: 20px;
+      bottom: 20px;
+      font-size: 45px;
+    }
+  
+    .cards_b {
+      padding: 0.5rem;
+    }
+  
+    .promo {
+      display: none;
+    }
+  
+    .taser-title {
+      position: absolute;
+      margin-left: 40%;
+      margin-bottom: 4rem;
+    }
+}
+
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: .6rem;
+  background-color: hsl(var(--body-color), 8%, 38%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 104, 4, 0.438);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color:rgba(255, 104, 4, 0.687);
+}
